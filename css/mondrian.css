@@ -1,3 +1,66 @@
+/* OUTER GRID ON RIGHT */
+
+.grid-right-container {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(2, 250px);
+}
+
+/* TOP */
+
+.grid-items-right-top {
+    display: grid;
+    grid-template-columns: 80px 80px 240px;
+    grid-template-rows: 50px 100px 100px;
+}
+
+.white-8, .white-9, .white-10 {
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+}
+
+.white-8, .white-11, .white-12 {
+    border-left: 4px solid black;
+}
+
+.white-10, .red-4, .red-6 {
+    border-right: 2px solid black;
+}
+
+.white-11 {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.white-12 {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.red-3, .red-4, .red-5, .red-6 {
+    background-color: red;
+    color: white;
+}
+
+.red-5, .red-6 {
+    border-bottom: 4px solid black;
+}
+
+.red-3, .red-4 {
+    border-top: 2px solid black;
+}
+
+.red-4, .red-6 {
+    border-right: 4px solid black;
+}
+
+.red-3, .red-5 {
+    border-left: 2px solid black;
+}
+
+
+/* OUTER GRID IN CENTER */
 .grid-center-container {
     display: grid;
     grid-template-columns: repeat(2, 200px);
