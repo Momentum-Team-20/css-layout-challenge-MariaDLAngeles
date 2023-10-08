@@ -1,9 +1,10 @@
 main {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 250px);
 }
 
+/* TOP LEFT YELLOW SQUARE */
 .grid-item_center-top-left {
     display: grid;
     grid-template-columns: 100px 100px;
@@ -25,7 +26,7 @@ main {
 }
 
 .yellow-2, .yellow-4 {
-    border-right: 4px solid black
+    border-right: 2px solid black
 
 }
 
@@ -36,7 +37,7 @@ main {
 
 .white-1, .white-2 {
     border-top: 2px solid black;
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
     
 }
 
@@ -46,32 +47,123 @@ main {
 }
 
 .white-2 {
-    border-right: 4px solid black;
+    border-right: 2px solid black;
     border-left: 2px solid black;
 }
+
+/* TOP RIGHT BLUE & RED SQUARE */
 
 .grid-item_center-top-right {
     display: grid;
     grid-template-columns: 200px;
-    grid-template-rows: 100px 100px 50px;
+    grid-template-rows: repeat(2, 100px) 50px;
 }
 
-.blue {
+.blue-1 {
     background-color: lightskyblue;
     color: white;
     border-top: 4px solid black;
     border-right: 4px solid black;
-    border-left: 4px solid black;;
+    border-left: 2px solid black;;
 }
 
-.red {
+.red-1 {
     background-color: red;
     color: white;
-    border: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
 }
 
-.white {
-    border-bottom: 4px solid black;
+.white-3 {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
     border-right: 4px solid black;
+}
+
+/* BOTTOM LEFT RED & BLUE SQUARE */
+
+.grid-item-center-bottom-left {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px repeat(2, 100px);
+}
+
+.white-4 {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
     border-left: 4px solid black;;
+}
+
+.blue-2 {
+    background-color: lightskyblue;
+    color: white;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 4px solid black;
+}
+
+.red-2 {
+    background-color: red;
+    color: white;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+/* BOTTOM RIGHT YELLOW & WHITE SQUARE */
+
+.grid-item-center-bottom-right {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px) 50px;
+}
+
+.white-5, .white-6 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    
+}
+
+.white-5 {
+    
+    border-right: 2px solid black;
+}
+
+.white-6 {
+    border-right: 4px solid black;
+}
+
+.yellow-5, .yellow-6 {
+    background-color: yellow;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.yellow-5 {
+    border-left: 2px solid black;
+
+}
+
+.yellow-6 {
+    border-right: 4px solid black
+
+}
+
+.white-7 {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 4px solid black;
+}
+
+.black-1 {
+    background-color: black;
+    color: white;
 }
