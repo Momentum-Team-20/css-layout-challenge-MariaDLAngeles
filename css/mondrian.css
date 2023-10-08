@@ -4,6 +4,52 @@ main {
     grid-template-rows: 50% 50%;
 }
 
+.grid-item_center-top-left {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 100px 100px;
+}
+
+.yellow-1, .yellow-2, .yellow-3, .yellow-4 {
+    background-color: yellow;
+}
+
+.yellow-1, .yellow-2 {
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+}
+
+.yellow-1, .yellow-3 {
+    border-left: 4px solid black;
+
+}
+
+.yellow-2, .yellow-4 {
+    border-right: 4px solid black
+
+}
+
+.yellow-3, .yellow-4 {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.white-1, .white-2 {
+    border-top: 2px solid black;
+    border-bottom: 4px solid black;
+    
+}
+
+.white-1 {
+    border-left: 4px solid black;
+    border-right: 2px solid black;
+}
+
+.white-2 {
+    border-right: 4px solid black;
+    border-left: 2px solid black;
+}
+
 .grid-item_center-top-right {
     display: grid;
     grid-template-columns: 200px;
