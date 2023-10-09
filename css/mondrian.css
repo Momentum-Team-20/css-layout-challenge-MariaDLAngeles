@@ -1,9 +1,15 @@
-/* OUTER GRID ON RIGHT */
+/* OUTER GRIDS */
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(4, 250px);
+}
+
+.grid-center-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 250px);
 }
 
 .grid-right-container {
@@ -11,6 +17,15 @@
     grid-template-columns: 400px;
     grid-template-rows: repeat(2, 250px);
 }
+
+.grid-left-container {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(2, 250px);
+}
+
+/* GRID RIGHT */
+/* divided into 2 */
 
                 /* TOP */
 
@@ -118,14 +133,12 @@
     border-left: 2px solid black;
 }
 
-/* OUTER GRID IN CENTER */
-.grid-center-container {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 250px);
-}
+/* GRID CENTER */
+
+/* divided into 4 quadrants */
 
 /* TOP LEFT YELLOW SQUARE */
+
 .grid-item_center-top-left {
     display: grid;
     grid-template-columns: 100px 100px;
@@ -282,4 +295,16 @@
     background-color: black;
     color: white;
     border: 2px solid black;
+}
+
+/* GRID RIGHT */
+
+/* divided into 2 */
+
+/* BOTTOM */
+
+.grid-items-left-bottom {
+    display: grid;
+    grid-template-columns: 240px 80px 80px;
+    grid-template-rows: 100px 100px 50px;
 }
