@@ -1,12 +1,18 @@
 /* OUTER GRID ON RIGHT */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(4, 250px);
+}
+
 .grid-right-container {
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: repeat(2, 250px);
 }
 
-/* TOP */
+                /* TOP */
 
 .grid-items-right-top {
     display: grid;
@@ -52,13 +58,64 @@
 }
 
 .red-4, .red-6 {
-    border-right: 4px solid black;
+    border-right: 2px solid black;
 }
 
 .red-3, .red-5 {
     border-left: 2px solid black;
 }
 
+                /* BOTTOM */
+
+.grid-items-right-bottom {
+    display: grid;
+    grid-template-columns: 80px 2fr 1fr 1fr;
+    grid-template-rows: repeat(5, 50px);
+}
+
+.white-13 {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.black-2, .black-3, .black-4, .black-5 {
+    background-color: black;
+    color: white;
+}
+
+.white-13, .white-21, .yellow-7, .yellow-8, .yellow-9 {
+    border-left: 4px solid black;
+}
+
+.white-21, .white-22, .yellow-11, .white-23 {
+    border-bottom: 4px solid black;
+}
+
+.white-14, .white-15, .white-19, .yellow-9 {
+    border-bottom: 2px solid black;
+}
+
+.white-15, .white-17, .white-18, .white-19, .white-20, .white-22, .white-23 {
+    border-right: 2px solid black;
+}
+
+.yellow-7, .yellow-8, .yellow-9, .yellow-10, .yellow-11 {
+    background-color: yellow;
+    border-right: 2px solid black;
+   
+}
+
+.yellow-10, .yellow-11 {
+    border-left: 2px solid black;
+}
+
+.yellow-7, .white-16, .white-17, .white-18, .black-4, .black-5, .white-21, .white-22, .yellow-10, .white-20 {
+    border-top: 2px solid black;
+}
+
+.white-18, .white-19, .white-20, .white-23 {
+    border-left: 2px solid black;
+}
 
 /* OUTER GRID IN CENTER */
 .grid-center-container {
@@ -84,7 +141,7 @@
 }
 
 .yellow-1, .yellow-3 {
-    border-left: 4px solid black;
+    border-left: 2px solid black;
 
 }
 
@@ -105,7 +162,7 @@
 }
 
 .white-1 {
-    border-left: 4px solid black;
+    border-left: 2px solid black;
     border-right: 2px solid black;
 }
 
@@ -155,19 +212,13 @@
 }
 
 .white-4 {
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-left: 4px solid black;;
+    border: 2px solid black;;
 }
 
 .blue-2 {
     background-color: lightskyblue;
     color: white;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 4px solid black;
+    border: 2px solid black;
 }
 
 .red-2 {
@@ -175,7 +226,7 @@
     color: white;
     border-top: 2px solid black;
     border-right: 2px solid black;
-    border-left: 4px solid black;
+    border-left: 2px solid black;
     border-bottom: 4px solid black;
 }
 
