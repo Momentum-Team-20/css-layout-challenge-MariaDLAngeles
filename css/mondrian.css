@@ -29,7 +29,7 @@
     border-left: 4px solid black;
 }
 
-.white-10, .red-4, .red-6 {
+.white-9, .white-10, .red-4, .red-6 {
     border-right: 2px solid black;
 }
 
@@ -61,7 +61,7 @@
     border-right: 2px solid black;
 }
 
-.red-3, .red-5 {
+.red-3, .red-5, .white-10 {
     border-left: 2px solid black;
 }
 
@@ -81,6 +81,7 @@
 .black-2, .black-3, .black-4, .black-5 {
     background-color: black;
     color: white;
+    border: 2px solid black;
 }
 
 .white-13, .white-21, .yellow-7, .yellow-8, .yellow-9 {
@@ -280,4 +281,5 @@
 .black-1 {
     background-color: black;
     color: white;
+    border: 2px solid black;
 }
